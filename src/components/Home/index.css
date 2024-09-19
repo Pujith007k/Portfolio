@@ -1,0 +1,507 @@
+ @import url('https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Fascinate+Inline&family=Pacifico&display=swap');
+ 
+.detailsContainer{
+    height:100vh;
+    width:100vw;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+   
+}
+.descriptionContainer{
+    display:column;
+    align-self: center;
+    margin-left:30px;
+     
+}
+.name{
+  color:#ffffff;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+.introHeading{
+    color:#000000;
+    margin-bottom:20px;
+    -webkit-animation-duration: 10s;
+    animation-duration: 10s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+  @-webkit-keyframes bounceInDown {
+            0% {
+               opacity: 0;
+               -webkit-transform: translateY(-200px);
+            }
+            60% {
+               opacity: 1;
+               -webkit-transform: translateY(0px);
+            }
+            80% {
+               -webkit-transform: translateY(0px);
+            }
+            100% { 
+               -webkit-transform: translateY(0);
+            }
+         }
+         
+  @keyframes bounceInDown {
+            0% {
+               opacity: 0;
+               transform: translateY(-200px);
+            }
+            60% {
+               opacity: 1;
+               transform: translateY(0px);
+            }
+            80% {
+               transform: translateY(0px);
+            }
+            100% {
+               transform: translateY(0);
+            }
+  }
+         
+  .bounceInDown {
+            -webkit-animation-name: bounceInDown;
+            animation-name: bounceInDown;
+  }
+
+.resumeButton{
+  animation: glitch 1s linear infinite;
+  color:#000000;
+}
+
+@keyframes glitch{
+  2%,64%{
+    transform: translate(5px,0) skew(0deg);
+  }
+  4%,60%{
+    transform: translate(-5px,0) skew(0deg);
+  }
+  62%{
+    transform: translate(0,0) skew(10deg); 
+  }
+}
+
+.resumeButton:before,
+.resumeButton:after{
+  content: attr(title);
+  position: absolute;
+  left: 0;
+}
+
+.resumeButton:before{
+  animation: glitchTop 1s linear infinite;
+  clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+}
+
+@keyframes glitchTop{
+  2%,64%{
+    transform: translate(2px,-2px);
+  }
+  4%,60%{
+    transform: translate(-2px,2px);
+  }
+  62%{
+    transform: translate(13px,-1px) skew(-13deg); 
+  }
+}
+
+.resumeButton:after{
+  animation: glitchBotom 1.5s linear infinite;
+  clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+  -webkit-clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+}
+
+@keyframes glitchBotom{
+  2%,64%{
+    transform: translate(-2px,0);
+  }
+  4%,60%{
+    transform: translate(-2px,0);
+  }
+  62%{
+    transform: translate(-22px,5px) skew(21deg); 
+  }
+}
+.homeImage{
+    height:400px;
+    width:400px;
+    background-size: cover;
+    border-radius:50%;
+    align-self:center;
+    position: relative;
+  animation: MoveUpDown 5s linear infinite;
+    
+}
+@keyframes MoveUpDown {
+  0%, 100% {
+    bottom: 0;
+  }
+  50% {
+    bottom: 100px;
+  }
+}
+
+.resumeButton{
+    height:40px;
+    width:120px;
+    color:#ffffff;
+    background-color: #2c446f;
+    border-width:0px;
+    border-radius:10px;
+    text-decoration: none;
+
+}
+.resumeLink{
+    text-decoration: none;
+    color:#ffffff;
+    
+}
+.homeHeading{
+  color:#095de3;
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  -webkit-animation-duration: 10s;
+  animation-duration: 10s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  
+}
+  @-webkit-keyframes bounceInRight {
+            0% {
+               opacity: 0;
+               -webkit-transform: translateX(200px);
+            }
+            60% {
+               opacity: 1;
+               -webkit-transform: translateX(0px);
+            }
+            80% {
+               -webkit-transform: translateX(0px);
+            }
+            100% {
+               -webkit-transform: translateX(0);
+            }
+         }
+         
+  @keyframes bounceInRight {
+            0% {
+               opacity: 0;
+               transform: translateX(200px);
+            }
+            60% {
+               opacity: 1;
+               transform: translateX(0px);
+            }
+            80% {
+               transform: translateX(0px);
+            }
+            100% {
+               transform: translateX(0);
+            }
+  }
+  .bounceInRight {
+            -webkit-animation-name: bounceInRight;
+            animation-name: bounceInRight;
+         }
+         
+         
+.accountLinks{
+  display:flex;
+  justify-content: flex-start;
+  margin-top:20px ;
+}
+.accountIcon{
+  height:20px;
+  width:20px;
+  
+}
+.accountIconContainer{
+  background-color: #b8b1b1;
+  height:30px;
+  width:30px;
+  border-radius: 20px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+}
+.iconDesignLinkedIn{
+  text-decoration: none;
+  color: #000000;
+}
+.iconDesignGit{
+    text-decoration: none;
+  color: #000000;
+}
+.iconDesignMail{
+  text-decoration: none;
+  color: #000000;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+     .detailsContainer{
+    height:100vh;
+    width:100vw;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    
+   
+}
+.descriptionContainer{
+    display:flex;
+    flex-direction: column;
+    align-self: center;
+    order:2;
+    margin-left:30px;
+     
+}
+.name{
+  color:#ffffff;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+.introHeading{
+    color:#000000;
+    margin-bottom:20px;
+    -webkit-animation-duration: 10s;
+    animation-duration: 10s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+  @-webkit-keyframes bounceInDown {
+            0% {
+               opacity: 0;
+               -webkit-transform: translateY(-200px);
+            }
+            60% {
+               opacity: 1;
+               -webkit-transform: translateY(0px);
+            }
+            80% {
+               -webkit-transform: translateY(0px);
+            }
+            100% { 
+               -webkit-transform: translateY(0);
+            }
+         }
+         
+  @keyframes bounceInDown {
+            0% {
+               opacity: 0;
+               transform: translateY(-200px);
+            }
+            60% {
+               opacity: 1;
+               transform: translateY(0px);
+            }
+            80% {
+               transform: translateY(0px);
+            }
+            100% {
+               transform: translateY(0);
+            }
+         }
+         
+  .bounceInDown {
+            -webkit-animation-name: bounceInDown;
+            animation-name: bounceInDown;
+  }
+
+.resumeButton{
+  animation: glitch 1s linear infinite;
+  color:#000000;
+}
+
+@keyframes glitch{
+  2%,64%{
+    transform: translate(5px,0) skew(0deg);
+  }
+  4%,60%{
+    transform: translate(-5px,0) skew(0deg);
+  }
+  62%{
+    transform: translate(0,0) skew(10deg); 
+  }
+}
+
+.resumeButton:before,
+.resumeButton:after{
+  content: attr(title);
+  position: absolute;
+  left: 0;
+}
+
+.resumeButton:before{
+  animation: glitchTop 1s linear infinite;
+  clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+}
+
+@keyframes glitchTop{
+  2%,64%{
+    transform: translate(2px,-2px);
+  }
+  4%,60%{
+    transform: translate(-2px,2px);
+  }
+  62%{
+    transform: translate(13px,-1px) skew(-13deg); 
+  }
+}
+
+.resumeButton:after{
+  animation: glitchBotom 1.5s linear infinite;
+  clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+  -webkit-clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+}
+
+@keyframes glitchBotom{
+  2%,64%{
+    transform: translate(-2px,0);
+  }
+  4%,60%{
+    transform: translate(-2px,0);
+  }
+  62%{
+    transform: translate(-22px,5px) skew(21deg); 
+  }
+}
+
+
+ 
+ .homeImage{
+    height:400px;
+    width:400px;
+    background-size: cover;
+    border-radius:50%;
+    align-self:center;
+    position: relative;
+    order:1;
+    margin-top:20px;
+    animation: 5s linear infinite;
+    
+}
+@keyframes MoveUpDown {
+  0%, 100% {
+    bottom: 0;
+  }
+  50% {
+    bottom: 100px;
+  }
+}
+.resumeButton{
+    height:40px;
+    width:120px;
+    color:#ffffff;
+    background-color: #2c446f;
+    border-width:0px;
+    border-radius:10px;
+    text-decoration: none;
+
+}
+.resumeLink{
+    text-decoration: none;
+    color:#ffffff;
+    
+}
+.homeHeading{
+  color:#095de3;
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  -webkit-animation-duration: 10s;
+  animation-duration: 10s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  
+}
+  @-webkit-keyframes bounceInRight {
+            0% {
+               opacity: 0;
+               -webkit-transform: translateX(200px);
+            }
+            60% {
+               opacity: 1;
+               -webkit-transform: translateX(0px);
+            }
+            80% {
+               -webkit-transform: translateX(0px);
+            }
+            100% {
+               -webkit-transform: translateX(0);
+            }
+         }
+         
+  @keyframes bounceInRight {
+            0% {
+               opacity: 0;
+               transform: translateX(200px);
+            }
+            60% {
+               opacity: 1;
+               transform: translateX(0px);
+            }
+            80% {
+               transform: translateX(0px);
+            }
+            100% {
+               transform: translateX(0);
+            }
+         }
+         
+  .bounceInRight {
+            -webkit-animation-name: bounceInRight;
+            animation-name: bounceInRight;
+  }
+.accountLinks{
+  display:flex;
+  justify-content: flex-start;
+  margin-top:20px ;
+}
+.accountIcon{
+  height:20px;
+  width:20px;
+  
+}
+.accountIconContainer{
+  background-color: #b8b1b1;
+  height:30px;
+  width:30px;
+  border-radius: 20px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+}
+.iconDesignLinkedIn{
+  text-decoration: none;
+  color: #000000;
+}
+.iconDesignGit{
+    text-decoration: none;
+  color: #000000;
+}
+.iconDesignMail{
+  text-decoration: none;
+  color: #000000;
+}
+
+
+}

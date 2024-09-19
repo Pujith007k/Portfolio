@@ -1,0 +1,15 @@
+.certficationsContainer{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.certificate{
+    height:200px;
+    width:350px;
+    margin:10px;
+}
+.certficationsHeading{
+    color:rgb(101, 66, 40);
+    text-align: center;
+}

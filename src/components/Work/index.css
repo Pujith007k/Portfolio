@@ -1,0 +1,262 @@
+.workContainer{
+    display:flex;
+
+}
+.serviceContainer{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.service-card{
+   display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height:250px;
+    width:500px;
+    background-color: antiquewhite;
+    color:black;
+    border-radius:20px;
+    margin-left:30px;
+    margin-bottom:10px;
+
+}
+
+.Icon{
+    height:60px;
+    width:80px;
+}
+.serviceParagraph{
+    margin-left:10px;
+}
+.myworkContainer{
+  margin-left:20px;
+  text-align: center;
+}
+.WorkexperienceContainer{
+     height:250px;
+    width:500px;
+    background-color: antiquewhite;
+    border-radius:20px;
+    padding:15px;
+}
+.projectsContainer{
+    margin-left:20px;
+    text-align: center;
+}
+
+.bookHubContainer{
+    position: relative;
+    height:250px;
+    width:400px;
+    margin-bottom:10px;
+    
+    
+}
+
+.bookHubImage{
+    height:250px;
+    width:400px;
+    border-radius: 10px;
+    opacity: 1;
+    display: block;
+    width: 100%;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+.bookShelvesContainer{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    height:250px;
+    width:400px;
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-image: linear-gradient(to bottom,transparent,azure);
+    border-radius:10px;
+    text-align: center;
+   
+    
+}
+.bookHubContainer:hover .bookHubImage{
+  opacity: 0.2;
+}
+
+.bookHubContainer:hover .bookShelvesContainer {
+  opacity: 1;
+}
+.linkIcon{
+    height:20px;
+    width:30px;
+    color:black;
+}
+.myElement{
+      color:#090755;
+}
+.serviceHeading{
+    color:rgb(101, 66, 40);
+}
+.serviceParagraph{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.serviceSubTitle{
+    color:cadetblue;
+    font-weight: bold;
+}
+.companyTenure{
+    display:flex;
+    justify-content: space-between;
+     align-items: center;
+     color:darkred;
+}
+.projectTitle{
+    color:darkmagenta;
+    font-weight: bold;
+    font-size: larger;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+.workContainer{
+    display:flex;
+    flex-direction: column;
+
+}
+.serviceContainer{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.service-card{
+   display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height:400px;
+    width:380px;
+    background-color: antiquewhite;
+    color:black;
+    border-radius:20px;
+    margin-bottom:30px;
+
+}
+
+.Icon{
+    height:60px;
+    width:80px;
+}
+.serviceParagraph{
+    margin-left:10px;
+}
+.myworkContainer{
+    margin-left:20px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom:30px;
+    
+}
+.WorkexperienceContainer{
+     height:300px;
+    width:350px;
+    background-color: antiquewhite;
+    border-radius:20px;
+    padding:15px;
+}
+.projectsContainer{
+    margin-left:20px;
+    text-align: center;
+}
+
+.bookHubContainer{
+    position: relative;
+    height:250px;
+    width:400px;
+    margin-bottom:10px;
+    
+    
+}
+
+.bookHubImage{
+    height:250px;
+    width:400px;
+    border-radius: 10px;
+    opacity: 1;
+    display: block;
+    width: 100%;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+.bookShelvesContainer{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    height:250px;
+    width:400px;
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-image: linear-gradient(to bottom,transparent,azure);
+    border-radius:10px;
+    text-align: center;
+   
+    
+}
+.bookHubContainer:hover .bookHubImage{
+  opacity: 0.2;
+}
+
+.bookHubContainer:hover .bookShelvesContainer {
+  opacity: 1;
+}
+.linkIcon{
+    height:20px;
+    width:30px;
+    color:black;
+}
+.myElement{
+      color:#090755;
+}
+.serviceHeading{
+    color:rgb(101, 66, 40);
+}
+.serviceParagraph{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.serviceSubTitle{
+    color:cadetblue;
+    font-weight: bold;
+}
+.companyTenure{
+    display:flex;
+    justify-content: space-between;
+     align-items: center;
+     color:darkred;
+}
+.projectTitle{
+    color:darkmagenta;
+    font-weight: bold;
+    font-size: larger;
+}
+
+}
